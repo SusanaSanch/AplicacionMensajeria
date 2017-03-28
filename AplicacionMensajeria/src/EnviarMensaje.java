@@ -1,6 +1,7 @@
 
 
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.util.ArrayList;
 
 import javax.servlet.ServletException;
@@ -30,8 +31,8 @@ public class EnviarMensaje extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
-		response.getWriter().append("Served at: ").append(request.getContextPath());
+	
+		doPost(request, response);
 	}
 
 	/**
@@ -50,12 +51,15 @@ public class EnviarMensaje extends HttpServlet {
 		 
 		 Usuario usrDest= MapaUsuarios.getHm().get(cartita.getId_destinatario());
 		
-		 Mensaje msg = new Mensaje(0,"hola" , null,usrRem , usrDest, false);
+		 Mensaje msg = new Mensaje(0,cartita.getMensaje() , null,usrRem , usrDest, false);
 		 listaMen.add(msg);
 		 
-		 usrRem.setLista_enviados(listaMen);;
-		 usrDest.setLista_recibidos(listaMen);
+		 MapaUsuarios.getHm().get(usrRem.getId()).setLista_enviados(listaMen);
+		 MapaUsuarios.getHm().get(usrDest.getId()).setLista_recibidos(listaMen);
 		 
+		 
+		 PrintWriter pw = response.getWriter();
+		 pw.write("Mensaje enviado " +msg.getMensaje());
 		 
 	}
 

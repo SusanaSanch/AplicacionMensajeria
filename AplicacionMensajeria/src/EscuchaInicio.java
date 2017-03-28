@@ -33,27 +33,28 @@ public class EscuchaInicio implements ServletContextListener {
      */
     public void contextInitialized(ServletContextEvent arg0)  { 
          // TODO Auto-generated method stub
-    	HashMap<Integer, Usuario> mapa_usuarios = new HashMap<Integer, Usuario>();
-    	mapa_usuarios.put(675491591, new Usuario("Daniel", 675491591, new ArrayList<Mensaje>(), new ArrayList<Mensaje>()));
-    	mapa_usuarios.put(629008383, new Usuario("Susana", 629008383, new ArrayList<Mensaje>(), new ArrayList<Mensaje>()));
-    	mapa_usuarios.put(636330405, new Usuario("Cristina", 636330405, new ArrayList<Mensaje>(), new ArrayList<Mensaje>()));
-    	mapa_usuarios.put(603858113, new Usuario("Dante", 603858113, new ArrayList<Mensaje>(), new ArrayList<Mensaje>()));
-    	mapa_usuarios.put(685799293, new Usuario("Manuel", 685799293, new ArrayList<Mensaje>(), new ArrayList<Mensaje>()));
-    	mapa_usuarios.put(663278994, new Usuario("Duque", 663278994, new ArrayList<Mensaje>(), new ArrayList<Mensaje>()));
-    	mapa_usuarios.put(695480008, new Usuario("Isabel", 695480008, new ArrayList<Mensaje>(), new ArrayList<Mensaje>()));
-    	mapa_usuarios.put(626723358, new Usuario("Álvaro García", 626723358, new ArrayList<Mensaje>(), new ArrayList<Mensaje>()));
-    	mapa_usuarios.put(648536056, new Usuario("Aitor", 648536056, new ArrayList<Mensaje>(), new ArrayList<Mensaje>()));
-    	mapa_usuarios.put(638072224, new Usuario("Álvaro Esteve", 638072224, new ArrayList<Mensaje>(), new ArrayList<Mensaje>()));
-    	mapa_usuarios.put(671418130, new Usuario("Iulian", 671418130, new ArrayList<Mensaje>(), new ArrayList<Mensaje>()));
-    	mapa_usuarios.put(626237277, new Usuario("Nira", 626237277, new ArrayList<Mensaje>(), new ArrayList<Mensaje>()));
-    	mapa_usuarios.put(615315404, new Usuario("Antonio", 615315404, new ArrayList<Mensaje>(), new ArrayList<Mensaje>()));
-    	mapa_usuarios.put(630115802, new Usuario("Carlota", 630115802, new ArrayList<Mensaje>(), new ArrayList<Mensaje>()));
-    	mapa_usuarios.put(625164730, new Usuario("Zaineb", 625164730, new ArrayList<Mensaje>(), new ArrayList<Mensaje>()));
-    	mapa_usuarios.put(657943713, new Usuario("Rodrigo", 657943713, new ArrayList<Mensaje>(), new ArrayList<Mensaje>()));
-    	mapa_usuarios.put(617184400, new Usuario("Cristian", 617184400, new ArrayList<Mensaje>(), new ArrayList<Mensaje>()));
-    	mapa_usuarios.put(600057665, new Usuario("Javi", 600057665, new ArrayList<Mensaje>(), new ArrayList<Mensaje>()));
+    	HashMap<String, Usuario> mapa_usuarios = new HashMap<String, Usuario>();
+    	mapa_usuarios.put("DGN", new Usuario("Daniel", "DGN", new ArrayList<Mensaje>(), new ArrayList<Mensaje>()));
+    	mapa_usuarios.put("SSM", new Usuario("Susana", "SSM", new ArrayList<Mensaje>(), new ArrayList<Mensaje>()));
+    	mapa_usuarios.put("CCS", new Usuario("Cristina", "CCS", new ArrayList<Mensaje>(), new ArrayList<Mensaje>()));
+    	mapa_usuarios.put("DJO", new Usuario("Dante", "DJO", new ArrayList<Mensaje>(), new ArrayList<Mensaje>()));
+    	mapa_usuarios.put("MSR", new Usuario("Manuel", "MSR", new ArrayList<Mensaje>(), new ArrayList<Mensaje>()));
+    	mapa_usuarios.put("DDC", new Usuario("Duque", "DDC", new ArrayList<Mensaje>(), new ArrayList<Mensaje>()));
+    	mapa_usuarios.put("IMA", new Usuario("Isabel", "IMA", new ArrayList<Mensaje>(), new ArrayList<Mensaje>()));
+    	mapa_usuarios.put("AGF", new Usuario("Álvaro García", "AGF", new ArrayList<Mensaje>(), new ArrayList<Mensaje>()));
+    	mapa_usuarios.put("AGR", new Usuario("Aitor", "AGR", new ArrayList<Mensaje>(), new ArrayList<Mensaje>()));
+    	mapa_usuarios.put("AEC", new Usuario("Álvaro Esteve", "AEC", new ArrayList<Mensaje>(), new ArrayList<Mensaje>()));
+    	mapa_usuarios.put("ICA", new Usuario("Iulian", "ICA", new ArrayList<Mensaje>(), new ArrayList<Mensaje>()));
+    	mapa_usuarios.put("NBH", new Usuario("Nira", "NBH", new ArrayList<Mensaje>(), new ArrayList<Mensaje>()));
+    	mapa_usuarios.put("ALB", new Usuario("Antonio", "ALB", new ArrayList<Mensaje>(), new ArrayList<Mensaje>()));
+    	mapa_usuarios.put("CSS", new Usuario("Carlota", "CSS", new ArrayList<Mensaje>(), new ArrayList<Mensaje>()));
+    	mapa_usuarios.put("ZMA", new Usuario("Zaineb", "ZMA", new ArrayList<Mensaje>(), new ArrayList<Mensaje>()));
+    	mapa_usuarios.put("RMS", new Usuario("Rodrigo", "RMS", new ArrayList<Mensaje>(), new ArrayList<Mensaje>()));
+    	mapa_usuarios.put("CHC", new Usuario("Cristian", "CHC", new ArrayList<Mensaje>(), new ArrayList<Mensaje>()));
+    	mapa_usuarios.put("JMP", new Usuario("Javi", "JMP", new ArrayList<Mensaje>(), new ArrayList<Mensaje>()));
 
     	MapaUsuarios.setHm(mapa_usuarios);
+    
     
     }
 	

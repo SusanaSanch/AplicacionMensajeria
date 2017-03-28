@@ -3,7 +3,7 @@ import java.util.List;
 public class Usuario {
 
 	private String nombre;
-	private int id;
+	private String id;
 	private List<Mensaje> lista_recibidos;
 	private List<Mensaje> lista_enviados;
 	
@@ -11,7 +11,7 @@ public class Usuario {
 	{
 		
 	}	
-	public Usuario(String nombre, int id, List<Mensaje> lista_recibidos, List<Mensaje> lista_enviados) {
+	public Usuario(String nombre, String id, List<Mensaje> lista_recibidos, List<Mensaje> lista_enviados) {
 		super();
 		this.nombre = nombre;
 		this.id = id;
@@ -24,10 +24,10 @@ public class Usuario {
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
 	}
-	public int getId() {
+	public String getId() {
 		return id;
 	}
-	public void setId(int id) {
+	public void setId(String id) {
 		this.id = id;
 	}
 	public List<Mensaje> getLista_recibidos() {
