@@ -7,6 +7,7 @@ public class Mensaje {
 	private Usuario remitente;
 	private Usuario destinatario;
 	private boolean leido;
+	
 	public int getId() {
 		return id;
 	}

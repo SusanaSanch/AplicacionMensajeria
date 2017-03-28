@@ -43,7 +43,7 @@ public class EnviarMensaje extends HttpServlet {
 		 ArrayList<Mensaje> listaMen= new ArrayList<Mensaje>();
 		 
 		 
-		 String json = gson.toJson(new Carta (675491591, 629008383, "Hola"), Carta.class);
+		 String json = gson.toJson(new Carta ("ICA", "DJO", "Hola"), Carta.class);
 	
 		 Carta cartita = gson.fromJson(json, Carta.class); 
 		 
